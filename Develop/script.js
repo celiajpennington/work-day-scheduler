@@ -34,9 +34,25 @@
 
 //A user clicks on slots on the color-coded calendar and edits the events.
 
-
+var currentTime = moment().hours()
 ///Current day
 var currentDay = moment().format("dddd LL");
 $("#currentDay").text(currentDay);
 
+//Create save button to set item to localstorage with parent div id value as key & input value as the local storage value
+$(".saveBtn").on("click" , function(){
+    var inputTextValue = $(this).siblings("#inputvalue").val();
+    var divTimeKey = $(this).parent().attr("id");
 
+    window.localStorage.setItem(divTimeKey, inputTextValue);
+})
+
+$("#9 #inputvalue").val(window.localStorage.getItem("9"));
+$("#10 #inputvalue").val(window.localStorage.getItem("10"));
+$("#11 #inputvalue").val(window.localStorage.getItem("11"));
+$("#12 #inputvalue").val(window.localStorage.getItem("12"));
+$("#1 #inputvalue").val(window.localStorage.getItem("1"));
+$("#2 #inputvalue").val(window.localStorage.getItem("2"));
+$("#3 #inputvalue").val(window.localStorage.getItem("3"));
+$("#4 #inputvalue").val(window.localStorage.getItem("4"));
+$("#5 #inputvalue").val(window.localStorage.getItem("5"));
