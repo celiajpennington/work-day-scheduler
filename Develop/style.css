@@ -10,8 +10,11 @@ textarea {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  text-align: center;
+  float: inline;
+  
 }
+ 
 
 .jumbotron {
   text-align: center;
@@ -27,24 +30,26 @@ textarea {
 
 .time-block {
   text-align: center;
-  border-radius: 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+ 
 }
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 40px;
   border-top: 1px solid white;
  
 }
 
-.hour { /** This is when the time bar is selected**/
+.hour :active { /** This is when the time bar is selected**/
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: grey ;
   color: white;
 }
 
@@ -64,6 +69,7 @@ textarea {
   border-bottom-right-radius: 5px;
   background-color: #06aed5;
   color: white;
+  margin-left: 815px;
 }
 
 .saveBtn i:hover {

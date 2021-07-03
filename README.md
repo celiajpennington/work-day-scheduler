@@ -1,6 +1,13 @@
 # work-day-scheduler
 A calendar application that allows the user yo save events for each hour of the day.
 
+#Motivation
+To showcase newly aquired skills using Moment.js library and bootstrap.
+
+#Objective 
+A calendar that allows the user to save events for each hourof the workday.
+
+#Visuals
 
 Your Task
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.

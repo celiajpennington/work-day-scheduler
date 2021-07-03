@@ -51,8 +51,25 @@ $("#9 #inputvalue").val(window.localStorage.getItem("9"));
 $("#10 #inputvalue").val(window.localStorage.getItem("10"));
 $("#11 #inputvalue").val(window.localStorage.getItem("11"));
 $("#12 #inputvalue").val(window.localStorage.getItem("12"));
-$("#1 #inputvalue").val(window.localStorage.getItem("1"));
-$("#2 #inputvalue").val(window.localStorage.getItem("2"));
-$("#3 #inputvalue").val(window.localStorage.getItem("3"));
-$("#4 #inputvalue").val(window.localStorage.getItem("4"));
-$("#5 #inputvalue").val(window.localStorage.getItem("5"));
+$("#13 #inputvalue").val(window.localStorage.getItem("13"));
+$("#14 #inputvalue").val(window.localStorage.getItem("14"));
+$("#15 #inputvalue").val(window.localStorage.getItem("15"));
+$("#16 #inputvalue").val(window.localStorage.getItem("16"));
+$("#17 #inputvalue").val(window.localStorage.getItem("17"));
+
+function colorBlock () {
+  $(".input-group").each(function(){
+    var colorBlock = $(this).attr("id")
+      if (currentTime > colorBlock){
+        $(this).addClass("past")
+      } else if (currentTime == colorBlock){
+        $(this).removeClass("past")
+         $(this).addClass("present")
+      } else if (currentTime < colorBlock){ 
+        $(this).removeClass("present")
+        $(this).addClass("future")
+      }
+  } )
+}
+colorBlock();
+
