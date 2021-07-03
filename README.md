@@ -1,7 +1,7 @@
 # work-day-scheduler
 A calendar application that allows the user yo save events for each hour of the day.
 
-https://celiajpennington.github.io/work-day-scheduler
+https://celiajpennington.github.io/work-day-scheduler/
 
 #Motivation
 To showcase newly aquired skills using Moment.js library and bootstrap.
